@@ -1,7 +1,7 @@
 # Name, title and description
 name: Jared Einstein
-title: experiments
-description: i have no idea what i'm doing
+title: jaredeinstein
+description: experiments
 
 # Includes an icon in the footer for each username entered
 footer-links:
@@ -32,7 +32,7 @@ baseurl: ""
 # Jekyll theme
 theme: jekyll-theme-cayman
 
-permalink: /:title/
+permalink: pretty
 
 # defaults for front matter
 # https://jekyllrb.com/docs/configuration/#front-matter-defaults
