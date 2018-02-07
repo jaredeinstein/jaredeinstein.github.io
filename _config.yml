@@ -6,17 +6,17 @@ description: i have no idea what i'm doing
 # Includes an icon in the footer for each username entered
 footer-links:
   dribbble:
-  email:
+  email: jared.einstein@gmail.com
   facebook:
   flickr:
-  github: barryclark/jekyll-now
-  instagram:
+  github: jaredeinstein/jaredeinstein.github.io
+  instagram: notcoachjerry
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: jekyllrb
+  twitter: jaredeinstein
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: channel/UC-O5wwl41LHOueSFA7QCIcA # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
   
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
