@@ -1,9 +1,11 @@
 ---
 ---
+
+//  Add any custom CSS (or Sass, including imports) you'd like immediately after the @import line
+//  If you'd like to change the theme's Sass variables, you must set new values before the @import line in your stylesheet.
+
+// Sass import (must go before theme line)
 @import "svg-icons";
+
+
 @import "{{ site.theme }}";
-
-
-
-// Import icons for footer.  Keep at bottom otherwise bloats top of CSS file
-
