@@ -12,12 +12,14 @@ collections:
     permalink: /blog/:year/:month/:day/:title.html
     
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
-      type: "post"
-    value:
+      type: "posts"
+    values:
       layout: "post"
-  - scope:
+  -
+    scope:
       path: ""
       type: "recipes"
     values:
