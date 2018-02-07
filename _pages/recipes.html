@@ -4,7 +4,7 @@ title: Recipes
 ---
 
 <ul>
-  {% assign sorted = (site.recipes | sore: 'date') | reverse %}
+  {% assign sorted = (site.recipes | sort: 'date') | reverse %}
   {% for item in sorted %}
   <li><a href="{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
