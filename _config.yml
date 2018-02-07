@@ -24,6 +24,12 @@ defaults:
       type: "recipes"
     values:
       layout: "recipe"
+  -
+    scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "default"
 
 # include the _pages directory
 include: ['_pages']
