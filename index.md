@@ -4,4 +4,4 @@ title: experiments
 ---
 _This thing is good_
 
-{{ site.title }}
+{{ site.title }}  ...title
