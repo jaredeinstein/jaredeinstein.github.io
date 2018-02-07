@@ -8,6 +8,8 @@ collections:
   recipes:
     output: true
     permalink: /:collection/:title.html
+  posts:
+    permalink: /blog/:year/:month/:day/:title.html
 
 # Includes an icon in the footer for each username entered
 footer-links:
