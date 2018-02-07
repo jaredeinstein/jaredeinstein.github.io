@@ -38,7 +38,7 @@ baseurl: ""
 # Jekyll theme
 theme: jekyll-theme-cayman
 
-permalink: pretty
+permalink: /:year/:month/:day/:title.html
 
 # defaults for front matter
 # https://jekyllrb.com/docs/configuration/#front-matter-defaults
