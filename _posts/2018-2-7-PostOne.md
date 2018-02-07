@@ -1,6 +1,0 @@
----
-layout: post
-title: Post One!
----
-
-Not sure if I'll use this as a blog or repurpose the convenient tagging
