@@ -3,6 +3,13 @@ permalink: /recipes/index.html
 title: Recipes
 ---
 
+<ul>
+  {% assign sorted = (site.recipes | sore: 'date') | reverse %}
+  {% for item in sorted %}
+  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+</ul>
+
 {% for item in site.recipes %}
   <h2>{{ item.title }}</h2>
   <p>{{ item.description }}</p>
