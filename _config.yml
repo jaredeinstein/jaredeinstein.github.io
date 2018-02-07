@@ -14,14 +14,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "recipes"
-    values:
-      layout: "recipe"
-  - scope:
-      path: ""
       type: "posts"
     value:
       layout: "post"
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
 
 # Includes an icon in the footer for each username entered
 footer-links:
