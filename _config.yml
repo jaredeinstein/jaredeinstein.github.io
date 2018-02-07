@@ -3,6 +3,14 @@ name: Jared Einstein
 title: jaredeinstein
 description: experiments
 
+# Collections
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:title
+  
+collections_dir: collections
+
 # Includes an icon in the footer for each username entered
 footer-links:
   dribbble:
