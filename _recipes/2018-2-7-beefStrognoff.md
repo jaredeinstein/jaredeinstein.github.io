@@ -1,6 +1,6 @@
 ---
 title: Beefy
-template: recipe
+layout: recipe
 ---
 
 Link to a thing for beef here
