@@ -7,8 +7,8 @@ description: experiments
 collections:
   recipes:
     output: true
-    permalink: /:collection/:title
-  
+    permalink: pretty
+    
 collections_dir: collections
 
 # Includes an icon in the footer for each username entered
