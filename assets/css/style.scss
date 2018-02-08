@@ -14,6 +14,10 @@
   color: $header-heading-color;
 }
 
+div.img_recipe img {
+  max-width: 33%;
+}
+
 article div.date {
   margin-top: 2rem;
   font-size: 0.7rem;
