@@ -11,7 +11,7 @@ layout: default
       {% for img in img_files %}
         ping{% include img_recipe.html name=page.slug %}
       {% endfor %}
-    {% endif %}
+    {% endunless %}
     {{ content }}
   </div>
 
