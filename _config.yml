@@ -35,6 +35,11 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  -
+    scope:
+      path: "assets/img/recipes"
+    values:
+      recipe: true
 
 # include the _pages directory
 include: ['_pages']
