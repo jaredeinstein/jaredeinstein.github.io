@@ -6,6 +6,10 @@ layout: default
   <h1>{{ page.title }}</h1>
 
   <div class="entry">
+    {% assign image_files = site.static_files | where: "base", page.slug %}
+    {% for myimage in image_files %}
+      {{ myimage.path }}
+    {% endfor %}
     {% include img_recipe.html name=page.slug %}
     {{ content }}
   </div>
