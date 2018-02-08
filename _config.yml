@@ -30,6 +30,11 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  -
+    scope:
+      path: "assets/img"
+    values:
+      image: true
 
 # include the _pages directory
 include: ['_pages']
