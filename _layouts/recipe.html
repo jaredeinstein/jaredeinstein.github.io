@@ -7,6 +7,7 @@ layout: default
 
   <div class="entry">
     {% assign image_files = site.static_files %}
+    {{ image_files }}
     {% for myimage in image_files %}
       {{ myimage.base }}
     {% endfor %}
