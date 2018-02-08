@@ -39,7 +39,7 @@ defaults:
     scope:
       path: "assets/img/recipes"
     values:
-      recipe: true
+      img_recipe: true
 
 # include the _pages directory
 include: ['_pages']
