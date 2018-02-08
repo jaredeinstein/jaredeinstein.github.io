@@ -7,9 +7,9 @@ layout: default
 
   <div class="entry">
     {% assign img_files = site.static_files  | where: "basename", page.slug%}
-    {% if img_files %}
+    {% unless img_files == empty %}
       {% for img in img_files %}
-        {% include img_recipe.html name=page.slug %}
+        ping{% include img_recipe.html name=page.slug %}
       {% endfor %}
     {% endif %}
     {{ content }}
