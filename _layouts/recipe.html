@@ -7,9 +7,9 @@ layout: default
 
   <div class="entry">
     {% assign image_files = site.static_files %}
-    {{ image_files }} woop
+    {{ image_files }}
     {% for myimage in image_files %}
-      {{ myimage.base }}
+      {{ myimage.base }} loopy
     {% endfor %}
     {% include img_recipe.html name=page.slug %}
     {{ content }}
