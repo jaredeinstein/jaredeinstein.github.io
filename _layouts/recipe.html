@@ -7,10 +7,11 @@ layout: default
 
   <div class="entry">
     {% assign img_files = site.static_files  | where: "basename", page.slug%}
-    {% for img in img_files %}
-      {{ img.basename }}
-    {% endfor %}
-    {% include img_recipe.html name=page.slug %}
+    {% if img_files > 0 %}
+      {% for img in img_files %}
+        {% include img_recipe.html name=page.slug %}{{ img.basename }}
+      {% endfor %}
+    {% endif %}
     {{ content }}
   </div>
 
