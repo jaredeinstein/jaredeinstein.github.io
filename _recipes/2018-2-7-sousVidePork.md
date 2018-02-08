@@ -3,6 +3,8 @@ title: Sous Vide Barbecue Pulled Pork Shoulder
 slug: sousVidePork
 ---
 
+{% include img_recipe.html name=page.slug %}
+
 Ingredients
 -----------
 
