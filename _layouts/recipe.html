@@ -8,7 +8,7 @@ layout: default
   <div class="entry">
     {% assign img_files = site.static_files  | where: "basename", page.slug%}
     {% unless img_files == empty %}
-      {% include img_recipe.html name=page.slug %}
+      new{% include img_recipe.html name=page.slug %}
     {% endunless %}
     {{ content }}
   </div>
