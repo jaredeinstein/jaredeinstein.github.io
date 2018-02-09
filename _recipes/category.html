@@ -4,20 +4,20 @@
 {% assign chicken = site.recipes | where: "category", "chicken" %}
 
 {% for recipe in chicken %}
-    {{ recipe.title }}
+    {{ recipe.title }}<br>
 {%endfor%}
-
+<br><br>
 {% assign allrecipessorted = site.recipes | sort: "category" %}
 
 {% for recipe in allrecipessorted %}
     {{ recipe.title }}
 {%endfor%}
-
+<br><br>
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for cat in recipe_cats %}
-    {{ cat.name }}
+    {{ cat.name }}<br>
     {% for recipe in cat.items %}
-        {{ recipe.title }}
+        {{ recipe.title }}<br>
     {%endfor%}
 {%endfor%}
