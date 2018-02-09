@@ -10,7 +10,7 @@
 {% assign allrecipessorted = site.recipes | sort: "category" %}
 
 {% for recipe in allrecipessorted %}
-    {{ recipe.title }}
+    {{ recipe.title }}<br>
 {%endfor%}
 <br><br>
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
