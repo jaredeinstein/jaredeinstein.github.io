@@ -1,6 +1,7 @@
 ---
-title: Better Bacon in the Oven
 slug: ovenBacon
+title: Better Bacon in the Oven
+category: pork
 ---
 
 Ingredients
