@@ -5,7 +5,7 @@ title: recipes
 
 <div class="alignright"><h3><a href="{{ site.baseurl }}{% link _pages/recipes_category.html %}">categories</a></h3></div>
 <div style="clear: both;"></div>
-<br><br>
+<br>
 <ul>
   {% assign sorted = (site.recipes | sort: 'date') | reverse %}
   {% for item in sorted %}
