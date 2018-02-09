@@ -1,6 +1,7 @@
 ---
-title: Sous Vide Barbecue Pulled Pork Shoulder
 slug: sousVidePork
+title: Sous Vide Barbecue Pulled Pork Shoulder
+category: pork
 ---
 
 Ingredients
