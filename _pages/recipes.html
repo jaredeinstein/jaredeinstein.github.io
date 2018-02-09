@@ -3,7 +3,7 @@ permalink: /recipes/index.html
 title: recipes   
 ---
 
-<h3><a href="{{ site.baseurl }}{% link _pages/recipes_category.html %}">view by category</a></h3>
+<h3><a href="{{ site.baseurl }}{% link _pages/recipes_category.html %}" class="alignright">categories</a></h3>
 
 <ul>
   {% assign sorted = (site.recipes | sort: 'date') | reverse %}
