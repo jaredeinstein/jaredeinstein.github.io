@@ -2,6 +2,20 @@
 permalink: /recipes/category.html
 ---
 
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
+
+{% for cat in recipe_cats %}
+    <h3>{{ cat.name }}</h3>
+    <ul>
+    {% for recipe in cat.items %}
+        <li><a href="{{ recipe.url | absolute_url }}">
+            {{ recipe.title }}
+        </a></li>
+    {%endfor%}
+    </ul>
+{%endfor%}
+
+{% comment %}
 {% assign chicken = site.recipes | where: "category", "chicken" %}
 
 <ul>
@@ -21,15 +35,4 @@ permalink: /recipes/category.html
 {%endfor%}
 </ul>
 <br><br>
-{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
-
-{% for cat in recipe_cats %}
-    <h3>{{ cat.name }}</h3>
-    <ul>
-    {% for recipe in cat.items %}
-        <li><a href="{{ recipe.url | absolute_url }}">
-            {{ recipe.title }}
-        </a></li>
-    {%endfor%}
-    </ul>
-{%endfor%}
+{% endcomment %}
