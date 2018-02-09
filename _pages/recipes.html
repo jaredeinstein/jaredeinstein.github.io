@@ -1,7 +1,25 @@
 ---
 permalink: /recipes/index.html
 title: recipes
+
+categories:
+  -
+    title: chicken
+  -
+    title: pork
+  -
+    title: beef
+  -
+    title: side
+  -
+    title: soup
+  -
+    title: equipment
+    
 ---
+
+{% for category in page.categories %}
+<h3>{{ category.title }}</h3>
 
 <ul>
   {% assign sorted = (site.recipes | sort: 'date') | reverse %}
