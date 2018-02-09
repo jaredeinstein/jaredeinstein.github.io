@@ -1,0 +1,23 @@
+---
+---
+
+{% assign chicken = site.recipes | where: "category", "chicken" %}
+
+{% for recipe in chicken %}
+    {{ recipe.title }}
+{%endfor%}
+
+{% assign allrecipessorted = site.recipes | sort: "category" %}
+
+{% for recipe in allrecipessorted %}
+    {{ recipe.title }}
+{%endfor%}
+
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
+
+{% for cat in recipe_cats %}
+    {{ cat.name }}
+    {% for recipe in cat.items %}
+        {{ recipe.title }}
+    {%endfor%}
+{%endfor%}
