@@ -21,7 +21,7 @@ permalink: /recipes/category.html
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for cat in recipe_cats %}
-    <h3>{{ cat.name }}</h3><br>
+    <h3>{{ cat.name }}</h3>
     {% for recipe in cat.items %}
         <a href="{{ recipe.url | absolute_url }}">
             {{ recipe.title }}
