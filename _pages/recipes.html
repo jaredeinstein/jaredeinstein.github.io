@@ -3,17 +3,11 @@ permalink: /recipes/index.html
 title: recipes   
 ---
 
+<h4><a href="{{ site.url }}{{ link _pages/recipes_category.html }}">view by category</a></h4>
+
 <ul>
   {% assign sorted = (site.recipes | sort: 'date') | reverse %}
   {% for item in sorted %}
   <li><a href="{{ item.url }}">{{ item.title }}</a></li>
   {% endfor %}
 </ul>
-
-{% comment %}
-{% for item in site.recipes %}
-  <h2>{{ item.title }}</h2>
-  <p>{{ item.description }}</p>
-  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-{% endfor %}
-{% endcomment %}
