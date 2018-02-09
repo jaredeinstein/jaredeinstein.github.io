@@ -1,7 +1,7 @@
 ---
 slug: ranchDressing
 title: Buttermilk Ranch Dressing
-category: chicken
+category: dressing
 ---
 
 Ingredients
