@@ -15,8 +15,8 @@ categories_list: [pork, dressing]
     {{ recipes_in_cat }}...piggyzzzz?
 
     <h3>{{ category }}</h3>
-    <h3>{{ recipes_in_cat['name'] }}3</h3>
-    <h4>{{ recipes_in_cat.items }}4</h4>
+    <h3>{{ recipes_in_cat.first['name'] }}3</h3>
+    <h4>{{ recipes_in_cat.first.items }}4</h4>
 
     <ul>
     {% for recipe in recipes_in_cat.items %}
