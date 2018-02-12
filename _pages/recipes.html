@@ -7,10 +7,9 @@ title: recipes
 <div style="clear: both;"></div>
 
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
-
+    <h5>{{ recipes_cats }}  ...dog</h5>
 {% for cat in recipe_cats %}
     <h3>{{ cat.name }}</h3>
-    <h5>{{ cat }}  ...dog</h5>
     <ul>
     {% for recipe in cat.items %}
         <li><a href="{{ recipe.url | absolute_url }}">
