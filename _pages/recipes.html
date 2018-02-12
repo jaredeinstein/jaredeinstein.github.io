@@ -8,7 +8,6 @@ categories_list: [pork, dressing]
 <div style="clear: both;"></div>
 
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
-<h5>{{ recipe_cats }}  ...dogs</h5>
 
 {% for category in page.categories_list %}
     {% assign recipes_in_cat = recipe_cats | where: "name",category %} 
