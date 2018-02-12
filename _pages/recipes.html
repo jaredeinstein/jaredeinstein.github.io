@@ -13,7 +13,8 @@ categories_list: [pork, dressing]
 {% for cat in page.categories_list %}
     {% assign recipes_cat = recipes_cats | where: "name",cat %}
 
-    <h3>{{ cat.name }}</h3>
+    {{ recipes_cat }}
+    <h3>{{ cat }}</h3>
     <ul>
     {% for recipe in recipes_cat %}
         <li><a href="{{ recipe.url | absolute_url }}">
