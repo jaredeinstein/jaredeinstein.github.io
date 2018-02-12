@@ -7,11 +7,11 @@ categories_list: [pork, dressing]
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
 <div style="clear: both;"></div>
 
-{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" | reverse %}
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for category in page.categories_list %}
     {% assign recipes_in_cat = recipe_cats | where: "name",category %} 
-    <h3>{{ recipes_in_cat.first.name.capitalize }}</h3>
+    <h3>{{ recipes_in_cat.first.name }}</h3>
     <ul>
     {% for recipe in recipes_in_cat.first.items %}
         <li><a href="{{ recipe.url | absolute_url }}">
