@@ -1,12 +1,12 @@
 ---
 permalink: /recipes/index.html
 title: recipes
-categories_list: [pork, dressing]
+categories_list: [dressing,pork]
 ---
 
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
 <div style="clear: both;"></div>
-
+rev
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for category in page.categories_list %}
