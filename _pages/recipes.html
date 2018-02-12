@@ -10,8 +10,11 @@ categories_list: [pork, dressing]
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 <h5>{{ recipe_cats }}  ...dogs</h5>
 
+{% assign reciprev = recipe_cats | reverse %}
+{{
+
 {% for cat in page.categories_list %}
-    {% assign recipes_cat = recipes_cats | where: "name","pork" %} ...piggy
+    {% assign recipes_cat = recipe_cats | where: "name","pork" %} ...piggy
 
     {{ recipes_cat }}
     <h3>{{ cat }}</h3>
