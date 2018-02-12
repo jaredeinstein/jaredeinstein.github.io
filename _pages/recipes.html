@@ -11,7 +11,7 @@ categories_list: [pork, dressing]
 <h5>{{ recipe_cats }}  ...dogs</h5>
 
 {% for cat in page.categories_list %}
-    {% assign recipes_cat = recipes_cats | where: "name",cat %}
+    {% assign recipes_cat = recipes_cats | where: "name","pork" %}
 
     {{ recipes_cat }}
     <h3>{{ cat }}</h3>
