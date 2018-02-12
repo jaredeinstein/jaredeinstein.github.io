@@ -16,7 +16,6 @@ categories_list: [pork, dressing]
 
     <h3>{{ category }}</h3>
     <h3>{{ recipes_in_cat.first['name'] }}</h3>
-    <h4>{{ recipes_in_cat.first.items }}</h4>
 
     <ul>
     {% for recipe in recipes_in_cat.items %}
@@ -28,7 +27,7 @@ categories_list: [pork, dressing]
     </ul>
 {% endfor %}
 
-<BR><BR><BR>
+{% comment %}
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
     <h5>{{ recipe_cats }}  ...dogs</h5>
 {% for cat in recipe_cats %}
@@ -41,7 +40,7 @@ categories_list: [pork, dressing]
     {%endfor%}
     </ul>
 {%endfor%}
-
+{% endcomment %}
 {% comment %}
 {% assign chicken = site.recipes | where: "category", "chicken" %}
 
