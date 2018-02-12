@@ -7,7 +7,7 @@ categories_list: [pork, dressing]
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
 <div style="clear: both;"></div>
 
-{% assign recipe_cats = site.recipes | group_by: "category" | sort: "date" %}
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" | reverse %}
 
 {% for category in page.categories_list %}
     {% assign recipes_in_cat = recipe_cats | where: "name",category %} 
