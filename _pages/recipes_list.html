@@ -2,9 +2,6 @@
 permalink: /recipes/list.html
 ---
 
-<div class="alignright"><h3><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h3></div>
-<div style="clear: both;"></div>
-<br>
 <ul>
   {% assign sorted = (site.recipes | sort: 'date') | reverse %}
   {% for item in sorted %}
