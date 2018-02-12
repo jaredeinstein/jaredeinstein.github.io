@@ -10,10 +10,10 @@ categories_list: [pork, dressing]
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 <h5>{{ recipe_cats }}  ...dogs</h5>
 
-{{ page.categories_list }}
+{{ page.categories_list }} ...cats
 
 {% for cat in page.categories_list %}
-    {{ cat }}
+    {{ cat }} ..birds
 {% endfor %}
 
 {% comment %}
