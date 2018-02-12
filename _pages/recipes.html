@@ -1,11 +1,20 @@
 ---
 permalink: /recipes/index.html
-title: recipes   
+title: recipes
+categories_list: [pork, dressing]
 ---
 
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
 <div style="clear: both;"></div>
 
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
+<h5>{{ recipe_cats }}  ...dogs</h5>
+
+{% for cat in categories_list %}
+    {{ cat }}
+{% endfor %}
+
+{% comment %}
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
     <h5>{{ recipe_cats }}  ...dogs</h5>
 {% for cat in recipe_cats %}
@@ -18,7 +27,7 @@ title: recipes
     {%endfor%}
     </ul>
 {%endfor%}
-
+{% endcomment %}
 {% comment %}
 {% assign chicken = site.recipes | where: "category", "chicken" %}
 
