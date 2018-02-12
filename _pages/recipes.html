@@ -10,6 +10,7 @@ title: recipes
 
 {% for cat in recipe_cats %}
     <h3>{{ cat.name }}</h3>
+    <h5>{{ cat }}</h5>
     <ul>
     {% for recipe in cat.items %}
         <li><a href="{{ recipe.url | absolute_url }}">
