@@ -28,7 +28,7 @@ categories_list: [pork, dressing]
     </ul>
 {% endfor %}
 
-{% comment %}
+<BR><BR><BR>
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
     <h5>{{ recipe_cats }}  ...dogs</h5>
 {% for cat in recipe_cats %}
@@ -41,7 +41,7 @@ categories_list: [pork, dressing]
     {%endfor%}
     </ul>
 {%endfor%}
-{% endcomment %}
+
 {% comment %}
 {% assign chicken = site.recipes | where: "category", "chicken" %}
 
