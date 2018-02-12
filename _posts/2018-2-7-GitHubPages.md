@@ -17,3 +17,4 @@ I spent a LOT of time on the [Jekyll Doc page](https://jekyllrb.com/docs/home/).
 
 Since I needed a bit more understanding of searching and grouping and sorting once I have all these parts of my collection, that is where [SiteLeaf's Liquid examples](https://www.siteleaf.com/blog/tags/liquid/) came in most handy.  It was a great jumping off point to what and how I was going to look at my data.
 
+Markdown is pretty straightforward with this [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet).
