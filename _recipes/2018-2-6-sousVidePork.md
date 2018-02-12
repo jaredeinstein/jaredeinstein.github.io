@@ -18,6 +18,7 @@ Ingredients
 *   1 tablespoon (8g) dried oregano
 *   1 tablespoon (12g) whole coriander seed
 *   1 teaspoon (4g) red pepper flakes
+
 *   **For the Pork:**
 *   1 whole boneless or bone-in pork butt (shoulder), 5 to 7 pounds total (2.25 to 3.25kg)
 *   1/2 teaspoon (3ml) liquid smoke (optional; see note)
