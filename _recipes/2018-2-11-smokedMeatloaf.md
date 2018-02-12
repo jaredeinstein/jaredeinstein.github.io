@@ -7,7 +7,7 @@ category: beef
 Ingredients
 -----------
 
-*   **For meafloaf:**
+*   **For meatloaf:**
 *   1 lb ground beef chuck
 *   1 lb ground sirloin
 *   1 lb ground pork
@@ -19,7 +19,7 @@ Ingredients
 *   6 oz crushed, ground, ruffle-style potato chips
 *   1/2 cup milk
 
-*   **For the Pork:**
+*   **For glaze:**
 *   2 chipotle chiles in adobo sauce, plus 1 Tbsp adobo
 *   1/4 cup tomato paste
 *   1/2 cup ketchup
