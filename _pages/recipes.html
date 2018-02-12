@@ -3,6 +3,10 @@ permalink: /recipes/index.html
 title: recipes   
 ---
 
+<div class="alignright"><h3><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h3></div>
+<div style="clear: both;"></div>
+<br>
+
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for cat in recipe_cats %}
