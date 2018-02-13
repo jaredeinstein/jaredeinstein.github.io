@@ -2,7 +2,7 @@
 title: Learn Git
 ---
 
-[Managing GitHub work](https://help.github.com/categories/managing-your-work-on-github/)
+[Managing GitHub work](https://help.github.com/categories/managing-your-work-on-github/) 
 [Closing Issues](https://help.github.com/articles/closing-issues-using-keywords/)
 
 
