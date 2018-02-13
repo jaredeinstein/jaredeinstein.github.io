@@ -5,13 +5,13 @@ title: Learn Git
 GitHub
 * [Managing GitHub work](https://help.github.com/categories/managing-your-work-on-github/) 
 * [Closing Issues](https://help.github.com/articles/closing-issues-using-keywords/)
-
+* [Remote URL tokens](https://help.github.com/articles/which-remote-url-should-i-use/)
+* [Personal Token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)
 
 Tuts
 * [GitHub Hello World](https://guides.github.com/activities/hello-world/)
 * [Pull Request](https://yangsu.github.io/pull-request-tutorial/)
 * [Git Pro](https://git-scm.com/book/en/v2)  also on [Amz](https://read.amazon.com/)
-
 
 Gogs
 * [Gogs](https://gogs.io/) for internal github install  
