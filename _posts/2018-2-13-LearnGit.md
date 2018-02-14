@@ -20,4 +20,4 @@ Gogs
 
 Git Windows
 * [Git Windows](https://gitforwindows.org/)
-* [Portabel](https://github.com/git-for-windows/git/releases)
+* [Portable](https://github.com/git-for-windows/git/releases)
