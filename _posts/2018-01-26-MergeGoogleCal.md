@@ -158,7 +158,7 @@ For the last step, in the Google Apps Script page go to Resources > Current Proj
 
 
 
-##Merging Two Google Calendars
+## Merging Two Google Calendars
 
 I regularly use Mail for Exchange to sync my phone with my Google Calendar account. It's awfully useful but there's one catch : you can't set it up to sync with two google calendars. It'll always sync only your primary calendar.
 Now, I have a personal calendar with entries for my classes etc. Apart from that, I have also subscribed to another public calendar for keeping track of the activities organized by various clubs of IISER Kolkata. But the default-calendar-only policy of Mail for Exchange meant I was unable to get the second calendar to sync with my phone.
