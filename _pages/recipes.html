@@ -12,9 +12,9 @@ categories_list: [chicken, sides, pork, beef, dressing]
     {% assign recipes_in_cats_first =  recipes_in_cats.first %} 
     {% assign recipes_in_cat_sorted =  (recipes_in_cats_first.items | sort: 'date') | reverse  %}
 {% endcomment %}
-    {{ recipes_in_cats }}
-    {{ recipes_in_cats_first }}
-    {{ recipes_in_cat_sorted }}
+    1 {{ recipes_in_cats }}
+    2 {{ recipes_in_cats_first }}
+    3 {{ recipes_in_cat_sorted }}
 {% comment %}
     <h3>{{ recipes_in_cats_first.name }}</h3>
     <ul>
