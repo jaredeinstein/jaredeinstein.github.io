@@ -17,9 +17,9 @@ categories_list: [chicken, sides, pork, beef, dressing]
 
     <h3>{{ recipes_in_cat_first.name }}</h3>
     <ul>
-    {% for recipe in recipes_in_cat_sorted %}
+    {% for recipe in recipes_in_cat_sorted reversed %}
         <li><a href="{{ recipe.url | absolute_url }}">
-            {{ recipe.title }} ping5
+            {{ recipe.title }} ping6
         </a></li>
     {%endfor%}
     </ul>
