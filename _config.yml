@@ -7,7 +7,7 @@ description: every day
 collections:
   recipes:
     output: true
-    permalink: /:collection/:title.html
+    permalink: :collection/:title.html
   posts:
     permalink: /blog/:year/:month/:day/:title.html
     
