@@ -4,10 +4,10 @@ title: recipes
 categories_list: [chicken, sides, pork, beef, dressing]
 ---
 
-{% assign recipe_cats = site.recipes | group_by: "category" | sort: "date" %}
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for category in page.categories_list %}
-    {% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'date' %} 
+    {% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
     {% assign recipes_in_cat_first =  recipes_in_cat.first %} 
 
     <h3>{{ recipes_in_cat_first.name }}</h3>
@@ -19,8 +19,6 @@ categories_list: [chicken, sides, pork, beef, dressing]
     {%endfor%}
     </ul>
 {% endfor %}
-
-{{ site.recipes }}
 
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
 <div style="clear: both;"></div>
