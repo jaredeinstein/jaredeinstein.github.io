@@ -9,7 +9,7 @@ categories_list: [chicken, sides, pork, beef, dressing]
 {% for category in page.categories_list %}
     {% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
     {% assign recipes_in_cat_first =  recipes_in_cat.first %} 
-    {% assign recipes_in_cat_sorted =  (recipes_in_cat_first.items | sort: 'date') | reverse %}
+    {% assign recipes_in_cat_sorted =  recipes_in_cat_first.items %}
 
     1 {{ recipes_in_cat }}
     2 {{ recipes_in_cat_first }}
