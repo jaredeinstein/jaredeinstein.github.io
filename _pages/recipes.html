@@ -7,23 +7,25 @@ categories_list: [chicken, sides, pork, beef, dressing]
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
 
 {% for category in page.categories_list %}
-    {% assign recipes_in_cats = (recipe_cats | where: "name",category) | sort: 'name' %} 
-    {% assign recipes_in_cats_first =  recipes_in_cats.first %} 
-    {% assign recipes_in_cat_sorted =  recipes_in_cats_first.items %}
+    {% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
+    {% assign recipes_in_cat_first =  recipes_in_cat.first %} 
+    {% assign recipes_in_cat_sorted =  recipes_in_cat_first.items %}
 
-    1 {{ recipes_in_cats }}
-    2 {{ recipes_in_cats_first }}
+    1 {{ recipes_in_cat }}
+    2 {{ recipes_in_cat_first }}
     3 {{ recipes_in_cat_sorted }}
 
-    <h3>{{ recipes_in_cats_first.name }}</h3>
+    <h3>{{ recipes_in_cat_first.name }}</h3>
     <ul>
     {% for recipe in recipes_in_cat_sorted %}
         <li><a href="{{ recipe.url | absolute_url }}">
-            {{ recipe.title }} ping4
+            {{ recipe.title }} ping5
         </a></li>
     {%endfor%}
     </ul>
 {% endfor %}
+
+{{ site.recipes }}
 
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
 <div style="clear: both;"></div>
