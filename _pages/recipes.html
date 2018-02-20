@@ -8,11 +8,11 @@ categories_list: [chicken, sides, pork, beef, dressing]
 
 {% for category in page.categories_list %}
     {% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
-    {% assign recipes_in_catzz =  recipes_in_cat.first %} 
-    {{ recipes_in_catzz }}
-    <h3>{{ recipes_in_cat.first.name }}</h3>
+    {% assign recipes_in_cat =  recipes_in_cat.first %} 
+    {{ recipes_in_cat }}
+    <h3>{{ recipes_in_cat.name }}</h3>
     <ul>
-    {% for recipe in recipes_in_cat.first.items %}
+    {% for recipe in recipes_in_cat.items %}
         <li><a href="{{ recipe.url | absolute_url }}">
             {{ recipe.title }} ping2
         </a></li>
