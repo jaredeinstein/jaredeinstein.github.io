@@ -14,6 +14,7 @@ categories_list: [chicken, sides, pork, beef, dressing]
     {{ recipes_in_cats }}
     {{ recipes_in_cats_first }}
     {{ recipes_in_cat_sorted }}
+{% comment %}
     <h3>{{ recipes_in_cats_first.name }}</h3>
     <ul>
     {% for recipe in recipes_in_cat %}
@@ -22,6 +23,7 @@ categories_list: [chicken, sides, pork, beef, dressing]
         </a></li>
     {%endfor%}
     </ul>
+{% endcomment %}
 {% endfor %}
 
 <div class="alignright"><h5><a href="{{ site.baseurl }}{% link _pages/recipes_list.html %}">as list</a></h5></div>
