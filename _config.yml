@@ -8,6 +8,9 @@ collections:
   recipes:
     output: true
     permalink: /:collection/:title.html
+  recipes_categories:
+    output: true
+    permalink: /recipes/category/:title.html
   posts:
     permalink: /blog/:year/:month/:day/:title.html
     
@@ -24,6 +27,12 @@ defaults:
       type: "recipes"
     values:
       layout: "recipe"
+  -
+    scope:
+      path: ""
+      type: "recipes_categories"
+    values:
+      layout: "recipes_category"
   -
     scope:
       path: "_pages"
