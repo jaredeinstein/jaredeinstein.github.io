@@ -2,6 +2,8 @@
 permalink: /recipes/list.html
 ---
 
+<h2>recipes</h2>
+
 <ul>
   {% assign sorted = (site.recipes | sort: 'date') | reverse %}
   {% for item in sorted %}
