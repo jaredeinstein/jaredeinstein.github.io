@@ -18,6 +18,8 @@ layout: default
   {% assign cat_url = cat_url.first.url %}
   
   <div class="date">
-    Logged on {{ page.date | date: "%B %e, %Y" }}  &nbsp; &nbsp;  Category: <a href="{{ cat_url }}">{{ page.category }}</a>
+    category: <a href="{{ cat_url }}">{{ page.category }}</a>
+    
+    logged on {{ page.date | date: "%B %e, %Y" }}
   </div>
 </article>
