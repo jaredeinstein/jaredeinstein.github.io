@@ -1,4 +1,3 @@
 ---
 title: chicken
-category: chicken
 ---
