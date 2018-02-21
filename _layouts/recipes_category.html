@@ -2,10 +2,11 @@
 layout: default
 ---
 
-{% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
+{% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
+{% assign recipes_in_cat = (recipe_cats | where: "name",page.category) | sort: 'name' %} 
 
 <article class="recipe">
-  <h2>{{ page.title }}</h2>
+  <h3>{{ page.title }}</h3>
 
   <div class="entry">
     <ul>
