@@ -13,7 +13,11 @@ layout: default
     {{ content }}
   </div>
 
+  
+  {% assign cat_url = (site.recipes_categories | where: "title",page.category) | sort: 'name' %}
+  {% assign cat_url = cat_url.first.url %}
+  
   <div class="date">
-    Logged on {{ page.date | date: "%B %e, %Y" }}
+    Logged on {{ page.date | date: "%B %e, %Y" }}   Category: <a href="{{ cat_url }}">{{ page.category }}</a>
   </div>
 </article>
