@@ -1,4 +1,3 @@
 ---
 title: dressing
-category: dressing
 ---
