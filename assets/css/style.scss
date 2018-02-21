@@ -10,8 +10,12 @@
 
 @import "{{ site.theme }}";
 
-.page-header a, h3 a {
+.page-header a {
   color: $header-heading-color;
+}
+
+h3 a {
+  color: $section-headings-color;
 }
 
 div.img_recipe img {
