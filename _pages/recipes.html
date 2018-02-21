@@ -8,7 +8,7 @@ categories_list: [chicken, sides, pork, beef, dressing]
 
 {% for category in page.categories_list %}
     {% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
-{{ site.recipes_categories[category].url }}
+{{ site.recipes_categories }}
     <h3><a href="{{ site.recipes_categories[category].url }}">{{ recipes_in_cat.first.name }}</a></h3>
     <ul>
     {% for recipe in recipes_in_cat.first.items reversed %}
