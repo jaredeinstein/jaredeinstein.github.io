@@ -2,11 +2,19 @@
 layout: default
 ---
 
+{% assign recipes_in_cat = (recipe_cats | where: "name",category) | sort: 'name' %} 
+
 <article class="recipe">
-  <h1>{{ page.title }}</h1>
+  <h2>{{ page.title }}</h2>
 
   <div class="entry">
-    {{ content }}
+    <ul>
+    {% for recipe in recipes_in_cat.first.items reversed %}
+        <li><a href="{{ recipe.url | absolute_url }}">
+            {{ recipe.title }}
+        </a></li>
+    {%endfor%}
+    </ul>
   </div>
   
 </article>
