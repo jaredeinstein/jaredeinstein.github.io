@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign recipe_cats = site.recipes | group_by: "category" | sort: "name" %}
-{% assign recipes_in_cat = (recipe_cats | where: "name",page.category) | sort: 'name' %} 
+{% assign recipes_in_cat = (recipe_cats | where: "name",page.title) | sort: 'name' %} 
 
 <article class="recipe">
   <h2>{{ page.title | downcase }}</h2>
