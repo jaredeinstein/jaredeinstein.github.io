@@ -1,3 +1,4 @@
 ---
+title: beef
 category: beef
 ---
