@@ -6,7 +6,7 @@ layout: default
 {% assign recipes_in_cat = (recipe_cats | where: "name",page.title) | sort: 'name' %} 
 
 <article class="recipe">
-  <h2>{{ page.title | downcase }}</h2>
+  <h2>{{ page.title }}</h2>
 
   <div class="entry">
     <ul>
