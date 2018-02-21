@@ -1,3 +1,3 @@
 ---
-category: sides
+title: sides
 ---
