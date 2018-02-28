@@ -6,8 +6,8 @@ title: quotes
 {% for quote in site.quotes %}
 
     <div class="quote">
-        <h3>{{ quote.title }}</h3>
-        {{ quote.content }}
+        <div class="q_header"><h3>{{ quote.title }}</h3></div>
+        <div class="q_content">{{ quote.content }}</div>
     </div>
     {% unless forloop.last == true %}
         <hr>
