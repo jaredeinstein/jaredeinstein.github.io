@@ -6,6 +6,8 @@ title: quotes
 {% for quote in site.quotes %}
 
     {{ quote.content }}
-    <hr>
+    {% unless forloop.last == true %}
+        <hr>
+    {% endunless %}
     
 {% endfor %}
