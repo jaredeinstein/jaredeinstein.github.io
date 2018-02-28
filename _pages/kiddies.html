@@ -10,10 +10,11 @@ title: kiddies
     <div class="quote">
         <div class="q_header"><h3>{{ kiddie.title }}</h3></div>
         <div class="q_content">{{ kiddie.content }}</div>
+        <div class="date">
+            said on {{ kiddie.date | date: "%B %e, %Y" }}
+        </div>
     </div>
-    <div class="date">
-      said on {{ kiddie.date | date: "%B %e, %Y" }}
-    </div>
+    
     {% unless forloop.last == true %}
         <hr>
     {% endunless %}
