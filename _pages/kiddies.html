@@ -1,0 +1,21 @@
+---
+permalink: /kiddies.html
+title: kiddies
+---
+
+{% assign kiddies = site.kiddies | reverse %}
+
+{% for kiddie in kiddies %}
+
+    <div class="quote">
+        <div class="q_header"><h3>{{ kiddie.title }}</h3></div>
+        <div class="q_content">{{ kiddie.content }}</div>
+    </div>
+    <div class="date">
+      said on {{ kiddie.date | date: "%B %e, %Y" }}
+    </div>
+    {% unless forloop.last == true %}
+        <hr>
+    {% endunless %}
+    
+{% endfor %}
