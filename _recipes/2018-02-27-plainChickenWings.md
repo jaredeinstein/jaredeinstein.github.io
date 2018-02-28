@@ -7,7 +7,7 @@ category: chicken
 Ingredients
 -----------
 
-* grapeseed oil (or other low smoke point)
+* grapeseed oil (or other low smoke point oil)
 * chicken wings
 * Salt
 
