@@ -13,6 +13,8 @@ collections:
     permalink: /recipes/category/:title.html
   quotes:
     output: false
+  kiddies:
+    output: false
   posts:
     permalink: /blog/:year/:month/:day/:title.html
     
@@ -39,6 +41,10 @@ defaults:
     scope:
       path: ""
       type: "quotes"
+  -
+    scope:
+      path: ""
+      type: "kiddies"
   -
     scope:
       path: "_pages"
