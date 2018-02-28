@@ -1,5 +1,5 @@
 ---
-title: Memento Mori
+title: memento mori
 ---
 
 - There is a confluence of ideas in Christian theology and Stoic philosophy, summarized in the Latin phrase, *[memento mori](https://breakingmuscle.com/fitness/you-dont-have-time)*. It means “remember that you will die”.
