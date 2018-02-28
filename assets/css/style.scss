@@ -28,6 +28,12 @@ h3 a {
   padding-left: 2em;
 }
 
+.quote .date {
+  padding-left: 2em;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
 div.img_recipe img {
   max-width: 33%;
 }
@@ -36,7 +42,12 @@ ul.posts li span {
   font-size: 0.75rem;
 }
 
-div.date {
+article div.date {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+}
+
+article div.date {
   margin-top: 2rem;
   font-size: 0.7rem;
 }
