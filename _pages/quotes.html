@@ -3,7 +3,9 @@ permalink: /quotes.html
 title: quotes
 ---
 
-{% for quote in site.quotes %}
+{% assign quotes = site.quotes | reverse %}
+
+{% for quote in quotes %}
 
     <div class="quote">
         <div class="q_header"><h3>{{ quote.title }}</h3></div>
