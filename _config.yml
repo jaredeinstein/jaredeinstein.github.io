@@ -11,6 +11,8 @@ collections:
   recipes_categories:
     output: true
     permalink: /recipes/category/:title.html
+  quotes:
+    output: false
   posts:
     permalink: /blog/:year/:month/:day/:title.html
     
@@ -33,6 +35,10 @@ defaults:
       type: "recipes_categories"
     values:
       layout: "recipes_category"
+  -
+    scope:
+      path: ""
+      type: "quotes"
   -
     scope:
       path: "_pages"
