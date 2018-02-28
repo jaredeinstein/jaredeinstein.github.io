@@ -5,7 +5,7 @@ title: quotes
 
 {% for quote in site.quotes %}
 
-    {{ quote.content }}
+    <div class="quote">{{ quote.content }}</div>
     {% unless forloop.last == true %}
         <hr>
     {% endunless %}
