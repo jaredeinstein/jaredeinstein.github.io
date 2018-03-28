@@ -2,7 +2,7 @@
 title: ask nicely
 ---
 
-Kid2 has gotten down from the dinner table to get briefly play with toys three times already.  Dad is finally putting a stop to it.  He grabs her and puts her firmly back in her chair.
+Kid2 has gotten down from the dinner table to go briefly play with toys three times already.  Dad is finally putting a stop to it.  He grabs her and puts her firmly back in her chair.
 
 __Dad__:  It is time to stop getting down from the dinner table.  Now sit down and eat your dinner.
 __Kid2__:  Ask nicely!
