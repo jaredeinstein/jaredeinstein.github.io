@@ -1,5 +1,5 @@
 ---
-permalink: braydenshow.html
+permalink: bshow.html
 title: Brayden's Show
 ---
 
